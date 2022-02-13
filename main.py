@@ -16,6 +16,7 @@ def random_color():
 
 # Turtle Setup
 turtle = Turtle()
+turtle.hideturtle()
 turtle.shape("turtle")
 turtle.color(random_color())
 turtle.speed(0)  # 1 slow, 10 fast, 0 fastest
@@ -46,6 +47,7 @@ def random_walk():
 
 
 def make_spirograph():
+    """Spirograph Shape, rendered on screen using Turtle Graphics Library"""
     repeat = 0
     while repeat != 36:  # interval is 10, so at 36 we made 360° turn
         turtle.forward(0)  # increase value to create gap in middle (0 == Spirograph)
@@ -77,7 +79,7 @@ def draw_dot_picture():
             turtle.dot(20, (random.choice(extracted_RGB_colors)))
             turtle.forward(50)
             printed_dots += 1
-            turtle_y_position += 5 # ATTENTION: Should be 50. But the spacing is correct with 5. dunno wtf is going on.
+            turtle_y_position += 5  # ATTENTION: Should be 50. But the spacing is correct with 5. dunno wtf is going on.
         turtle.setposition(0, turtle_y_position)
 
 # draw_dot_picture()
