@@ -85,7 +85,7 @@ def draw_dot_picture():
 # draw_dot_picture()
 # make_shape()
 # random_walk()
-# make_spirograph()
+make_spirograph()
 
 
 screen = Screen()
